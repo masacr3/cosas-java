@@ -65,8 +65,6 @@ class DiscoMusical {
     public void setDigital( Boolean digital ){
         this.digital = digital;
     }
-    
-    
 
 }
     
@@ -79,6 +77,35 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        DiscoMusical disco = new DiscoMusical("Californication","Red hot chili peppers",2001,"album", true);
+        
+        System.out.println("Info Disco\n");
+        System.out.println("\tTitulo : "+disco.getTitulo());
+        System.out.println("\tAutor : "+disco.getAutor());
+        System.out.println("\tAnio edicion : "+disco.getAnioEdicion());
+        System.out.println("\tFormato : "+disco.getFormato());
+        System.out.println("\tDigital : "+( disco.getDigital() ? "si\n" : "no\n" ) );
+        
+        //modificamos contenido
+        
+        //corregimos año
+        disco.setAnioEdicion(1999);
+        //cambiamos a minusculas
+        disco.setTitulo("californication");
+        //ponemos todos los autores
+        disco.setAutor("Antoni ,flea ,Chad smith, John Frusciante");
+        //especificamos el formato
+        disco.setFormato("Estudio");
+        //vinilo ponele
+        disco.setDigital(false);
+        
+        System.out.println("Info Disco\n");
+        System.out.println("\tTitulo : "+disco.getTitulo());
+        System.out.println("\tAutor : "+disco.getAutor());
+        System.out.println("\tAnio edicion : "+disco.getAnioEdicion());
+        System.out.println("\tFormato : "+disco.getFormato());
+        System.out.println("\tDigital : "+( disco.getDigital() ? "si\n" : "no\n" ) );
         
     }
     
