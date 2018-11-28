@@ -10,11 +10,11 @@ package ipm.tech;
  * @author masacr3
  */
 public class Empleado {
-    String nombre;
-    String cedula;
-    int edad;
-    Boolean casado;
-    double salario;
+    private String nombre;
+    private String cedula;
+    private int edad;
+    private Boolean casado;
+    private double salario;
     
     public Empleado(){}
     

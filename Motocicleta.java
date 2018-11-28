@@ -10,10 +10,10 @@ package ipm.tech;
  * @author masacr3
  */
 public class Motocicleta {
-    String matricula;
-    String color;
-    int velocidad;
-    Boolean en_marcha;
+    private String matricula;
+    private String color;
+    private int velocidad;
+    private Boolean en_marcha;
     
     public Motocicleta(){
         this.matricula = "No asignado";
@@ -40,6 +40,14 @@ public class Motocicleta {
     
     public void frenar(){
         this.velocidad = 0;
+    }
+    
+    
+    public void datos(){
+        System.out.println("matricula : "+this.matricula);
+        System.out.println("color : "+this.color);
+        System.out.println("velocidad : "+this.velocidad);
+        System.out.println("en marcha : "+this.en_marcha);
     }
     
     /* 
