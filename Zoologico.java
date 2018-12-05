@@ -22,16 +22,16 @@ public class Zoologico {
     }
     
     public void abrir(){
-        this.esta_abierto = true;
+        this.setEstaAbierto(true);
     }
     
     public void cerrar(){
-        this.esta_abierto = false;
+        this.setEstaAbierto(false);
     }
     
     public void AlimentarAnimales( int unaCantidadDeRaciones){
         Cuidador cuidador = new Cuidador( unaCantidadDeRaciones);
-        cuidador.alimentarAnimales( this.CANTIDAD_ANIMALES, this.RACIONES_POR_ANIMAL );
+        cuidador.alimentarAnimales( this.getCantidadAnimales(), this.getRacionesPorAnimal() );
     }
     
     //metodos publicos set and get
