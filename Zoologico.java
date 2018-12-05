@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio1.herencia;
+package programa1;
 
 /**
  *
@@ -11,8 +11,8 @@ package ejercicio1.herencia;
  */
 public class Zoologico {
     //definicion de constantes
-    static final int CANTIDAD_ANIMALES = 25;
-    static final int RACIONES_POR_ANIMAL = 25;
+    static private final int CANTIDAD_ANIMALES = 25;
+    static private final int RACIONES_POR_ANIMAL = 25;
     
     
     protected boolean esta_abierto;
@@ -36,9 +36,9 @@ public class Zoologico {
     
     //metodos publicos set and get
     
-    public int getCantidadAnimales(){ return this.CANTIDAD_ANIMALES; }
+    public int getCantidadAnimales(){ return CANTIDAD_ANIMALES; }
     
-    public int getRacionesPorAnimal(){ return this.RACIONES_POR_ANIMAL; }
+    public int getRacionesPorAnimal(){ return RACIONES_POR_ANIMAL; }
     
     public boolean getEstaAbierto() { return this.esta_abierto; }
     
